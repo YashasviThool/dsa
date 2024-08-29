@@ -1,0 +1,32 @@
+
+    this is the code for A * function
+    # closed_set = set()
+    # open_set = {start}
+    # came_from = {}
+    # g_score = {start: 0}
+    # f_score = {start: graph.heuristic(start, goal)}
+
+    # while open_set:
+    #     current = min(open_set, key=f_score.get)
+    #     if current == goal:
+    #         return reconstruct_path(came_from, current)
+
+    #     open_set.remove(current)
+    #     closed_set.add(current)
+
+    #     for neighbor in graph.neighbors(current):
+    #         if neighbor in closed_set:
+    #             continue
+
+    #         tentative_g_score = g_score[current] + graph.cost(current, neighbor)
+
+    #         if neighbor not in open_set:
+    #             open_set.add(neighbor)
+    #         elif tentative_g_score >= g_score[neighbor]:
+    #             continue
+
+    #         came_from[neighbor] = current
+    #         g_score[neighbor] = tentative_g_score
+    #         f_score[neighbor] = g_score[neighbor] + graph.heuristic(neighbor, goal)
+
+    # return None  # If no solution is found
